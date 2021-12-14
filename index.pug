@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Segunda parte SASS 14 Diciembe del 2021
+        link(rel="stylesheet", href="style.css")
+    body 
+        mixin caja(numero)
+            div(class="caja_"+numero)
+        .CajaPadre Hola Mundo
+            each value,id in [1,2,3,4,5]
+                +caja(value)
+
+
+        //- .CajaPadre2
+        //-     each value,id in [1,2,3,4,5]
+        //-         +caja(value)

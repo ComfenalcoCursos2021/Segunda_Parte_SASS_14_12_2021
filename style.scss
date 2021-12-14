@@ -1,0 +1,125 @@
+
+@for $i from 1 through 5 {
+    .caja_#{$i}{
+        width: 250px;
+        height: 250px;
+        background: darken(#00ff00, $i * 5%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// $lista: (
+//     border-color: red, 
+//     border-style: solid, 
+//     font-family: cursive, 
+//     width: 900px,  
+//     height: 900px
+// );
+
+// .CajaPadre{
+//     @each $id, $value in $lista{
+//         #{$id}: #{$value};
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @mixin condicion($mensaje, $color){
+
+//     .caja_3{
+//         background: #{$color};
+//         height: 300px;
+//         width: 300px;
+//         &::before{
+//             content: ""+$mensaje;
+//             color: white;
+//             font-size: 15px;
+//             font-weight: bold;
+//         }
+//     }
+    
+// }
+
+// .CajaPadre{
+    
+
+//     //Operadores Arigmaticos
+//     //Adicion +
+//     //Sustracion -
+//     //Multiplicacion *
+//     //Division /
+//     //Modulo %
+    
+//     //Operadores Comparacion
+//     //Igualdad ==
+//     //Diferente !=
+//     //Mayor >
+//     //Mayor Igual >=
+//     //Menor <
+//     //Menor igual <=
+
+//     //Opereradores Logicos
+//     //Y and
+//     //O or
+//     //Contrario not 
+//     $num: 18;
+//     @if ($num >= 18){
+//         @include condicion("Soy Mayor de edad", green);
+//     }@else if ($num <= 17 and $num >=15){
+//         @include condicion("Soy Menor de edad", orange);
+//     }@else{
+//         @include condicion("La condicion no cumple", red);
+//     }
+    
+//     @extend %acuerdo;
+//     background: rgb(153, 153, 153);
+
+//     &>div{
+//         width: 50px;
+//         height: 50px;
+//         margin-bottom: 5px;
+//         background: black;
+//         &::after{
+//             content: 'Hola como estas';
+//             color: white;
+//         }
+//     }    
+// }
+
+// %acuerdo{
+//     height: 600px;
+//     width: 600px;
+// }
+
+// .CajaPadre2{
+//     @extend %acuerdo;
+//     background: red;
+//     &>div{
+//         width: 50px;
+//         height: 50px;
+//         margin-bottom: 5px;
+//         background: black;
+//     }
+// }
